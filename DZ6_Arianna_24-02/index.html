@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Проверка текста</h1>
+    </header>
+    <main>
+        <p id="text"></p>
+        <form class="checkboxes" onchange="highlightText()">
+            <div>
+                <div>
+                    <input type="checkbox" id="long-words-checkbox" name="contact" value="long-words-checkbox">
+                    <label for="long-words-checkbox">Слова длиннее 8 символов</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="vowel-words-checkbox" name="contact" value="vowel-words-checkbox">
+                    <label for="vowel-words-checkbox">Слова, начинающиеся с гласной</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tse-words-checkbox" name="contact" value="tse-words-checkbox">
+                    <label for="tse-words-checkbox">Слова, оканчивающиеся на "ться" или "тся"</label>
+                </div>
+            </div>
+        </form>
+    </main>
+
+<!--    <header>-->
+<!--        <h1>Проверка текста</h1>-->
+<!--    </header>-->
+<!--    <main>-->
+<!--        <textarea id="text-input"></textarea>-->
+<!--        <div class="checkboxes">-->
+<!--            <label><input type="checkbox" id="long-words-checkbox"> Слова длиннее 8 символов</label>-->
+<!--            <label><input type="checkbox" id="vowel-words-checkbox">Слова, начинающиеся с гласной</label>-->
+<!--            <label><input type="checkbox" id="tse-words-checkbox">Слова, оканчивающиеся на "ться" или "ться"</label>-->
+<!--        </div>-->
+<!--        <button id="highlight-button">Выделенный текст</button>-->
+<!--        <div id="text-output"></div>-->
+<!--    </main>-->
+    <script src="app.js"></script>
+</body>
+</html>
